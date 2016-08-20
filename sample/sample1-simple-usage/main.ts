@@ -1,7 +1,7 @@
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {Component, NgModule} from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import {Modal, PreventParentScroll} from "../../src/index";
+import {BrowserModule} from "@angular/platform-browser";
+import {PreventParentScroll} from "../../src/index";
 
 @Component({
     selector: "app",
