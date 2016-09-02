@@ -23,6 +23,9 @@ Prevents scrolling in the parent container when child container already has a sc
 
 ## Usage
 
+Import a `PreventParentScrollModule` module and use directive your html:
+
+
 ```html
 <div preventParentScroll [preventParentScrollDisabled]="false">
     ... some content that can be scrolled ...
@@ -35,7 +38,7 @@ Prevents scrolling in the parent container when child container already has a sc
 
 ```typescript
 import {Component} from "@angular/core";
-import {PreventParentScroll} from "ng2-prevent-parent-scroll";
+import {PreventParentScrollModule} from "ng2-prevent-parent-scroll";
 
 @Component({
     selector: "app",
@@ -49,10 +52,7 @@ import {PreventParentScroll} from "ng2-prevent-parent-scroll";
     </div>
     
 </div>
-`,
-    directives: [
-        PreventParentScroll
-    ]
+`
 })
 export class App {
 
@@ -63,6 +63,22 @@ export class App {
             this.items.push(i);
         }
     }
+
+}
+
+@NgModule({
+    imports: [
+        // ...
+        PreventParentScrollModule
+    ],
+    declarations: [
+        App
+    ],
+    bootstrap: [
+        App
+    ]
+})
+export class AppModule {
 
 }
 ```

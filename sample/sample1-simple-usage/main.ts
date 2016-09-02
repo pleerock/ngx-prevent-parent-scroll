@@ -1,7 +1,7 @@
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {Component, NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {PreventParentScroll} from "../../src/index";
+import {PreventParentScrollModule} from "../../src/index";
 
 @Component({
     selector: "app",
@@ -15,10 +15,7 @@ import {PreventParentScroll} from "../../src/index";
     </div>
     
 </div>
-`,
-    directives: [
-        PreventParentScroll
-    ]
+`
 })
 export class Sample1App {
 
@@ -34,7 +31,8 @@ export class Sample1App {
 
 @NgModule({
     imports: [
-        BrowserModule
+        BrowserModule,
+        PreventParentScrollModule
     ],
     declarations: [
         Sample1App

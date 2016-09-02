@@ -1,4 +1,5 @@
-import {Directive, ElementRef, OnInit, OnDestroy, Input} from "@angular/core";
+import {Directive, ElementRef, OnInit, OnDestroy, Input, NgModule} from "@angular/core";
+import {CommonModule} from "@angular/common";
 
 @Directive({
     selector: "[preventParentScroll]"
@@ -72,5 +73,20 @@ export class PreventParentScroll implements OnInit, OnDestroy {
             return prevent();
         }
     }
+
+}
+
+@NgModule({
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        PreventParentScroll,
+    ],
+    exports: [
+        PreventParentScroll,
+    ],
+})
+export class PreventParentScrollModule {
 
 }
