@@ -1,4 +1,4 @@
-# ng2-prevent-parent-scroll
+# ngx-prevent-parent-scroll
 
 Prevents scrolling in the parent container when child container already has a scroll.
 
@@ -6,17 +6,17 @@ Prevents scrolling in the parent container when child container already has a sc
 
 1. Install npm module:
     
-    `npm install ng2-prevent-parent-scroll --save`
+    `npm install ngx-prevent-parent-scroll --save`
 
 2. If you are using system.js you may want to add this into `map` and `package` config:
 
     ```json
     {
         "map": {
-            "ng2-prevent-parent-scroll": "node_modules/ng2-prevent-parent-scroll"
+            "ngx-prevent-parent-scroll": "node_modules/ngx-prevent-parent-scroll"
         },
         "packages": {
-            "ng2-prevent-parent-scroll": { "main": "index.js", "defaultExtension": "js" }
+            "ngx-prevent-parent-scroll": { "main": "index.js", "defaultExtension": "js" }
         }
     }
     ```
@@ -38,7 +38,7 @@ Import a `PreventParentScrollModule` module and use directive your html:
 
 ```typescript
 import {Component} from "@angular/core";
-import {PreventParentScrollModule} from "ng2-prevent-parent-scroll";
+import {PreventParentScrollModule} from "ngx-prevent-parent-scroll";
 
 @Component({
     selector: "app",
@@ -83,5 +83,5 @@ export class AppModule {
 }
 ```
 
-Take a look on samples in [./sample](https://github.com/pleerock/ng2-prevent-parent-scroll/tree/master/sample) for more examples of
+Take a look on samples in [./sample](https://github.com/pleerock/ngx-prevent-parent-scroll/tree/master/sample) for more examples of
 usages.
