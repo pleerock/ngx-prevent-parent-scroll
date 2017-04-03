@@ -1,3 +1,5 @@
+> This repository is for demonstration purposes of how it can be implemented in Angular and is not maintaned. Please fork and maintain your own version of this repository.
+
 # ngx-prevent-parent-scroll
 
 Prevents scrolling in the parent container when child container already has a scroll.
