@@ -25,7 +25,7 @@
     "angular2-prevent-parent-scroll"
   ],
   "peerDependencies": {
-    "@angular/core": "^2.0.0"
+    "@angular/core": "^2.0.0 || ^4.2.0"
   },
   "devDependencies": {
     "@angular/common": "^2.4.3",
